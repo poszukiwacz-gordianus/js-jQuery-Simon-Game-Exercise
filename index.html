@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 id="level-title">Press Spacebar to Start</h1>
+
+  <div id="rules">
+    <h2>Rules</h2>
+    <ul>
+      <li>1. The game consists of multiple levels. The objective is to repeat the sequence of buttons played in each level.</li>
+      <li>2. Each level has a time limit, depended of game difficulty. You must complete the sequence before the timer runs out.</li>
+      <li>3. You are allowed to use up to 3 hints during each level. When you click the "Hint" button, the next button in the sequence will be shown.</li>
+      <li>4. The sequence of buttons grows longer with each new level.</li>
+    </ul>
+    <h3>Select difficulty:</h3>
+    <div class="difficulty-btn-container">
+      <button class="difficulty-btn" id="easy">Easy</button>
+      <button class="difficulty-btn" id="medium">Medium</button>
+      <button class="difficulty-btn" id="hard">Hard</button>
+    </div>
+  </div>
+
+  <button id="next-level-btn" class="pop-up-message"></button>
+
+  <p id="timer"></p>
+
+  <h2 id="hint"></h2>
+  <h3 id="pause-game">Pause</h3>
+  <h3 id="remaining-clicks"></h3>
+
+  <button id="resume-game" class="pop-up-message">Resume</button>
+  
+  <div class="container">
+    <div class="row">
+      
+      <div type="button" id="green" class="btn green">
+
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
+
+</body>
+
+</html>
